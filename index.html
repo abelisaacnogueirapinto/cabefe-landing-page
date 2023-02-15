@@ -1,4 +1,4 @@
-<!doctype html>
+.<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
@@ -6,11 +6,13 @@
     <title>Piloto Cabefe
 
     </title>
-    <link rel="stylesheet" href="css/cabefe.css">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/media-query.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
   </head>
-  <body>
+  <body onresize="mudoutamanho">
   <header class="cabecalho">
     <div class="logo">
       <a href="#inicio">
@@ -19,10 +21,10 @@
     </div>
 
     <button class="menu-toggle" onclick="">
-      <i class="fa fa-lg fa-bars"></i>
+      <i class="fa fa-lg fa-bars material-icons"  id="burguer"  onclick="clickmenu()"></i>
     </button>
 
-    <nav class="menu">
+    <nav class="menu" id="opcoes">
         <div class="container-fluid">
             <li class="nav-item dropdown">
               <a  class="nav-link dropdown-toggle"  href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -93,36 +95,37 @@
   </header> 
     <main>
     <div class="homedv1">
-       <section class="textohome" id="img01">
+
+       <section class="textohome" >
         
         <h1><strong>CABEFE</strong> </h1>
         
-        <H5>CAIXA BENEFICÊNCIA DOS FUNCIONARIOS DA EMATER</H3>
+        <H5>CAIXA BENEFICÊNCIA DOS FUNCIONARIOS DA EMATER</H5>
         
         <h2><strong> Sua família mais tranquila</strong> </h2>
         
-        <p> A <strong>CABEFE</strong> proporciona aos seus associados e dependentes, tranquilidade nos momentos mais difíceis da vida, permitindo acesso ao que há de mais moderno em assistência médica e odontológica. Através dos fundos de reservas a CABEFE permite aos seus associados, apoio financeiro nas horas críticas. Nosso plano  tem cobertura ampla, conforto e socorro aéreo. O valor cobrado de nossos associados é muito inferior aos que são praticados atualmente no mercado. </p>
-
-      </section>
+        <h3><p> A <strong>CABEFE</strong> proporciona aos seus associados e dependentes, tranquilidade nos momentos mais difíceis da vida, permitindo acesso ao que há de mais moderno em assistência médica e odontológica. Através dos fundos de reservas a CABEFE permite tambm, apoio financeiro nas horas críticas. Nosso plano  tem cobertura ampla, conforto e socorro aéreo. O valor cobrado de nossos associados é muito inferior aos que são praticados atualmente no mercado. </p></h3>
+       </section>
     </div>
 
 
       <div class="d-sm-flex flex-column-reverse p-2 divisor">
            
-          <div class="align-self-end">Tamo Junto </div>       
+          <div class="align-self-center">Tamo Junto </div>       
          
       </div>
       <div class="container-fluid">
            <div class="row emater">
 
-                <div class="col-sm-6 bg-light">
-                  <img src="/imagens/sedeemater.jpg" alt="imagem sede" class="img-fluid" >
+                <div class="col-sm-6 imgEmater">
+                  
                 </div>
-                <div class="col-sm-6 bg-light emater-Text" width="600">
-                  <p> A EMATER-MG é sem dúvida a melhor empresa de extensão rural do Brasil, 
+                
+                <div class="col-sm-6 emater-Text">
+                  <p> A<strong></strong> EMATER-MG</strong> é sem dúvida a melhor empresa de extensão rural do Brasil, 
                   sendo referência para outros países. A EMATER-MG sempre proporcionou aos produtores rurais de Minas a melhor assistência técnica, desenvolvimento e sustentabilidade. A EMATER-MG também é uma empresa que preocupa com o bem
                   estar de seus funcionários e familiares, sendo apoio fundamental na viabilidade do nosso plano de saúde para com nossos associados </p>
-                  <button class="botao-Site" onclick="">EMATER-MG</button>
+                 .
                 </div>
 
           </div>
@@ -130,31 +133,31 @@
       </div>
       <div class="d-sm-flex flex-column-reverse p-2 divisor">
            
-        <div class="align-self-end">Parceiro da Hora </div>       
+      <div class="align-self-center">Parceiro da Hora </div>       
        
     </div>
     <div class="container-fluid">
          <div class="row unimed">
-              <div class="col-sm-6 bg-light unimed-Text" >
+              <div class="col-sm-6  unimed-Text" >
                 <p> A UNIMED-BH vem mantendo parceria com a CABEFE desde 1992 com o plano de saúde dos funcionários da EMATER-MG. 
                   A UNIMED fornece aos associados da CABEFE assistência de alta qualidade, tecnologia  e também translado com UTIs aéreo e terrestre. A UNIMED é uma das melhores
                    em assistência médica-hospitalar do país. O nosso plano de saúde cobre quase todo estado de Minas Gerais.  </p>
-                <button class="botao-Site" onclick="">Unimed-BH</button>
+                
               </div>
 
-              <div class=" col-sm-6 bg-light">
-                <img src="/imagens/unimedbh.jpg" alt="imagem unimed" class="img-fluid" width="1000">
+              <div class=" col-sm-6 imgUnimed ">
+                
               </div>
          </div>      
          <div class="row unimed">    
-              <div class=" col-sm-4 bg-light">
-                <img src="/imagens/sosterra.jpeg" alt="imagem unimed" class="img-fluid" >
+              <div class=" col-sm-4 ">
+                <img src="/imagens/sosterra.jpeg" alt="imagem unimed" class="img-fluid imgUnimed" >
               </div>
-              <div class=" col-sm-4 bg-light">
-                <img src="/imagens/sosaviao.jpg" alt="imagem unimed" class="img-fluid" >
+              <div class=" col-sm-4 ">
+                <img src="/imagens/sosaviao.jpg" alt="imagem unimed" class="img-fluid imgUnimed" >
               </div>
-              <div class=" col-sm-4 bg-light">
-                <img src="/imagens/soshelicopto.jpg" alt="imagem unimed" class="img-fluid" >
+              <div class=" col-sm-4 ">
+                <img src="/imagens/soshelicopto.jpg" alt="imagem unimed" class="img-fluid imgUnimed" >
               </div> 
 
         </div>
@@ -162,13 +165,72 @@
     </div>
 
           
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
       </main>   
   
   <footer>
-    <p>Site criado por <a href="https://github.com/abelnogueira" target="_blank">Abel Nogueira</a></p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2 logo">
+          <h5>Parceiros:</h5>
+          <a href="#inicio">
+            <img src="imagens/logoemater.jpg"  alt="Logo" class="img-fluid logoEmater" />
+           </a>
+            
+           
+        </div>
+        
+        <div class="col-sm-2 logo">
+          <br>
+          <a href="#inicio">
+            <img src="imagens/logounimed.jpg"  alt="Logo"  class="img-fluid logoUnimed" />
+           </a>
+            
+           
+        </div>
+        <div class="col-sm-3 logradouro">
+          <h5> Endereço:</h5><br>
+         <p>Av. Raja Gabaglia, 1626 3º andar Emater   
+          Belo Horizonte - Minas Gerais</p>
+        </div>
+        <div class="col-sm-2 mapa ">
+          <h5>Localizaçao:</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.441166285172!2d-43.96344470183887!3d-19.947940794510856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69798f1045403%3A0x2b3f937b4ba0b840!2sAv.%20Raja%20Gab%C3%A1glia%2C%201626%20-%20Cidade%20Jardim%2C%20Belo%20Horizonte%20-%20MG%2C%2030441-194!5e0!3m2!1spt-BR!2sbr!4v1674843928718!5m2!1spt-BR!2sbr" width="140" height="120" style="border: 1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-sm-3 contato">
+          <h5>Contato:</h5> 
+          <p>(31)33498164 - Socios facultativos / odontologia</p>
+          <p>(31)33498108 - Emprestimos </p>
+          <p>(31)33498161 - Reembolso /  Faturamento / Plano Saude</p>
+          <p>(31)33498112 - Cadastro / documentaçao</p>
+
+          
+        </div>
+      </div>
+    </div>
 
   </footer>
+  <script>
+    function mudoutamanho() {
+        if (window.innerWidth >= 768 && opcoes.style.display=='none'){
+            opcoes.style.display='block'
+        } else {
+            opcoes.style.display='none'
+        }
+
+    }
+    function clickmenu() {
+        if (opcoes.style.display == 'block') {
+            opcoes.style.display = 'none'
+        } else {
+          opcoes.style.display='block'
+
+        }
+    }         
+    
+    
+
+</script>
 </body>
 
 </html>

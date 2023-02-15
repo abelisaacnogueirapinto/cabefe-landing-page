@@ -1,0 +1,377 @@
+@charset "UTF-8";
+/* TODAS DEMASI MÍDIAS */
+
+/* typical device breakpoints 
+celular: 600px até 768px
+tablet: 768x até 992px
+desktop: 992px até 1200px
+grandes telas: acima de 1200px
+
+okd
+*/
+:root {
+    /*cores*/
+
+    --corverde  :#225D4D;
+    --corverdee :#235C4D;
+    --corfundo  :#151515e8;
+    --corverdec :#b7f0d6;
+    --corazulc  :#4faddb;
+    --corazule  :#286291;
+    --corpreta  :#000;
+    --corbranca :#fff;
+    
+    /*fontes*/
+    --fonte-padrao   : Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque1: 'Abel', cursive;
+    --fonte-tema     : 'Fahkwang', sans-serif;
+}
+
+@media print { /*impressoras*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+       
+    }
+    main h1 {
+        font-size: xx-small;
+        text-shadow: none;
+        color: black;
+        
+    
+    }
+    body {
+        background-image: url('../imagens/back-print.jpg'); /*não precisa*/
+    }
+    
+    main {
+        border: 1px solid gray;
+        width: 90vw;
+    }
+    main::after {
+        content: 'Impressao site CABEFE';
+        text-decoration: overline;
+        
+    }
+
+
+}
+@media screen and (min-width: 380px) and (max-width:600px) { /*celulares*/
+
+    .homedv1 {
+        display: block;
+        background-image: url('../imagens/familiahome/familiacelular1.jpg');
+        
+        background-size: cover;
+        background-position: center center;
+        
+    }
+    
+    .menu {
+        display: none;
+    }
+    .menu-toggle
+    { 
+        display: block;
+    }
+
+    .botao 
+    {
+        box-shadow: 1px 1px 1px 1px var(--corazule);
+        border: none;
+        border-radius: 5px;
+        margin: 10px;
+        background: var(--corazulc);
+        color: var(--corverdec);
+        text-align: center;
+        width: 120px; 
+       
+    }
+    .botao:hover 
+    {
+        color: var(--corpreta)
+
+    }
+    
+    div>.emater-Text
+
+    {
+        background: url("../imagens/sedeemater2.jpg") no-repeat;
+        color:var(--corbranca);
+        font-size: 1.1em;
+        font-weight: 700;
+        text-shadow:var(--corpreta) 2px 1px 4px;
+        background-size: cover;
+        background-position: top center;
+        height: auto;
+
+    }
+    div>.unimed-Text
+
+    {
+        background: url("../imagens/unimedbh2.jpg") no-repeat;
+        color:var(--corbranca);
+        font-size: 1.1em;
+        font-weight: 700;
+        text-shadow:var(--corpreta) 2px 2px 4px;
+        background-size: cover;
+        background-position: top center;
+        height: auto;
+
+    }
+
+}
+@media screen and (min-width: 601px) and (max-width:1024px) { /*tablet*/
+
+    .homedv1 {
+        background-image: url('../imagens/familiahome/familiatablet2.jpg');
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        
+    }
+    section {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        
+    }
+    
+    section > h1,h2,h5 {
+        padding-top: 5px;
+        text-align: center;
+        text-shadow: 2px 2px 3px var(--corpreta);
+    }
+    
+    section>h1 {
+        text-align: center;
+        font-size: 2.3em;
+        color:var(--corbranca);
+    }
+    section>h5 {
+        color: var(--corbranca);
+        font-size: 1.2em;
+        
+    }
+    
+    .textohome>h3
+        {
+            font-size: 1.45em;
+            color: var(--corbranca);
+            text-align: justify;
+            font-weight: 800px;
+            text-shadow: 2px 2px 1px black;
+            padding: 30px;
+            max-width: 690px;
+            margin: auto;
+        }
+    
+    section>h2 {    
+        color:var(--corverdec);
+        margin:30px;
+        font-size: 2.4em;
+        font-family: var(--fonte-tema);     
+    }
+    div>.emater-Text ,div> .unimed-Text
+        {
+        margin-top: 0px;
+        font-size: .9em;
+        text-align: justify;
+        padding: 5px;
+        background: var(--corbranca);
+        color:var(--corpreta);
+
+    }
+    .menu {
+        display: none;
+    }
+    .menu-toggle
+    { 
+        display: block;
+    }
+
+    .botao 
+    {
+        box-shadow: 1px 1px 1px 1px var(--corazule);
+        border: none;
+        border-radius: 5px;
+        margin: 10px;
+        background: var(--corazulc);
+        color: var(--corverdec);
+        text-align: center;
+        width: 120px; 
+       
+    }
+    .botao:hover 
+    {
+        color: var(--corpreta)
+
+    }
+    .emater-Text > p, .unimed-Text>p
+     {
+        margin-top: 0px;
+        font-size: 1.35em;
+        text-align: justify;
+        padding: 5px;
+        background: var(--corbranca);
+        color:var(--corpreta);
+
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1758px) { /*Desktop*/
+    .menu
+    {
+        align-items: center;
+    display: inline-block;
+    margin-left:240px;
+    /* margin-top: 3.5%; */ 
+    vertical-align: top;
+    height: 100px;
+    margin-top: -70px;
+    margin-left:320px;
+    padding-left: -50px;
+    color: var(--corverdec);
+    }
+    
+    .homedv1 {
+        background-image: url('../imagens/familiahome/familiahomefeliz.jpg');
+        display: block;
+        background-size: cover;
+        background-position: top center;
+        
+        margin-top: 45px;
+        
+    }
+    section {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        
+    }
+    
+    section > h1,h2,h5 {
+        padding-top: 5px;
+        text-align: center;
+        text-shadow: 2px 2px 3px var(--corpreta);
+    }
+    
+    section>h1 {
+        text-align: center;
+        font-size: 3.2em;
+        color:var(--corbranca);
+    }
+    section>h5 {
+        color: var(--corbranca);
+        font-size: 1.2em;
+        
+    }
+
+    
+    .textohome>h3
+        {
+            font-size: 1.55em;
+            color: var(--corbranca);
+            text-align: justify;
+            font-weight: 800px;
+            text-shadow: 2px 2px 1px black;
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+    
+    section>h2 {    
+        color:var(--corverdec);
+        margin:30px;
+        font-size: 2.9em;
+        font-family: var(--fonte-tema);     
+    }
+    div>.emater-Text ,div>.unimed-Text
+        {
+        max-width: 600px;
+        margin-top: 5px;
+        font-size: 1.2em;
+        text-align: justify;
+        padding: 10px;
+        background: var(--corbranca);
+        color:var(--corpreta);
+    }
+    .menu {
+        display: block;
+    }
+    
+    .menu-toggle
+    {
+        display: none;
+    }
+}
+@media screen and (min-width: 1758px) { /* telas grandes*/
+    .homedv1 {
+        background-image: url('../imagens/familiahome/familiatv.jpg');
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        margin-top: 30px;
+     }
+
+    .menu {display: block;}
+    
+    .menu-toggle
+    {
+        display: none;
+    }
+     section {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        
+    }
+    
+    section > h1,h2,h5 {
+        padding-top: 5px;
+        text-align: center;
+        text-shadow: 2px 2px 3px var(--corpreta);
+    }
+    
+    section>h1 {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 2.9em;
+        color:var(--corbranca);
+    }
+    section>h5 {
+        color: var(--corbranca);
+        font-size: 1.4em;
+        
+    }
+    
+    .textohome>h3
+        {
+            font-size: 1.8em;
+            color: var(--corbranca);
+            text-align: justify;
+            font-weight: 1000px;
+            text-shadow: 2px 2px 1px black;
+            padding: 30px;
+            max-width: 950px;
+            margin: auto;
+        }
+    
+    section>h2 {    
+        color:var(--corverdec);
+        margin:30px;
+        font-size: 2.8em;
+        font-family: var(--fonte-tema);     
+    }
+    div>.emater-Text ,div> .unimed-Text
+        {
+        margin-top: 0px;
+        font-size: 1.4em;
+        text-align: justify;
+        padding: 5px;
+        background: var(--corbranca);
+        color:var(--corpreta);
+        max-width: 800px;
+        
+        
+    }
+    
+    
+    
+}
+

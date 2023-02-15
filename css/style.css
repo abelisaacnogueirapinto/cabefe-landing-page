@@ -1,0 +1,381 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@1,200&display=swap'); 
+/*
+#225d4d verde
+#d3d3d3 cinza
+#4faddb  azul claro
+#000 preto
+#fff brancp
+
+*/
+:root {
+    /*cores*/
+
+    --corverde  :#225D4D;
+    --corverdee :#235C4D;
+    --corfundo  :#222222;
+    --corverdec :#b7f0d6;
+    --corazulc  :#4faddb;
+    --corazule  :#286291;
+    --corpreta  :#000;
+    --corbranca :#fff;
+    
+    /*fontes*/
+    --fonte-padrao   : Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque1: 'Abel', cursive;
+    --fonte-tema     : 'Fahkwang', sans-serif;
+}
+
+
+
+* { box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family: var(--fonte-padrao);
+  
+}
+
+
+html {
+    
+
+    height: 100vh;
+    margin: 0px;
+    padding: 0px; 
+    background-color:var(--corfundo);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main {
+    background-color: var(--corfundo);
+    margin: auto;
+}
+
+
+/* cabeçalho e navbar */
+
+.cabecalho { 
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    background:var(--corverde);
+    border-bottom: solid 5px var(--corazulc);
+    height: 130px;
+    box-sizing: content-box;
+    background-image: linear-gradient( to left, var(--corverde), var(--corverdee));
+
+
+}
+.cabecalho a {
+    text-decoration: none;
+    color: var(--corcinza);
+    font-size: 1.0em;
+    
+}
+.logo {
+    display: inline-block;
+    height: 130px;
+    width: 140px;
+    padding: 0px;
+
+}
+.logo img {
+    height: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    float: right;
+    color: var(--corverdec) ;
+    background-color:var(--corazulc);
+    border-color: #fff;
+    border-style:double;
+    border: 8px ;
+    border-radius: 5px;
+    height: 45px;
+    padding: 10px 15px;
+    margin: 40px 15px;
+}
+i#burguer {
+    background-color: var(--corazulc);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    cursor: pointer;
+
+}
+i#burguer:hover {
+    background-color: white;
+    color: var(--corfundo);
+}
+
+.menu {
+    align-items: center;
+    display: inline-block;
+    margin-left:240px;
+    /* margin-top: 3.5%; */ 
+    vertical-align: top;
+    height: 100px;
+    margin-top: -70px;
+    margin-left:320px;
+    padding-left: -50px;
+    color: var(--corverdec);
+
+}
+.menu ul {
+    background: var(--corbranca);
+    opacity: 90%;
+}  
+.menu li {
+    display: inline-block;
+}
+hr {
+    color: #000;
+}
+
+
+.menu a {
+    padding: 7px;
+}
+.autenticacao {
+    float: right;
+    height: 130px;
+    padding:55px;
+    
+}
+
+
+.menu a:hover,
+.menu a.selected {
+    background-color: var(--corazulc) ;
+    color: var(--corpreta);
+
+}
+#opcoes
+{
+    display: block;
+}
+.botao {
+    border-radius: 10px;
+    padding: 10px 7px;
+    margin-top: 30px;
+    margin-right: 0px;
+    background: var(--corazulc);
+
+}
+.destaque {
+    background: var(--corazulc);
+    
+}
+.destaque:hover {
+    background: var(--corazulc);
+    color: var(--corverdec);
+}
+
+
+/* home page secao inicial da mensagem da  CABEFE */
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    
+}
+
+section > h1,h2,h5 {
+    padding-top: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 3px var(--corpreta);
+}
+
+section>h1 {
+    text-align: center;
+    font-size: 1.9em;
+    color:var(--corbranca);
+}
+section>h5 {
+    color: var(--corbranca);
+    font-size: .9em;
+    
+}
+
+.textohome>h3
+    {
+        font-size: 1.4em;
+        color: var(--corbranca);
+        text-align: justify;
+        font-weight: 800px;
+        text-shadow: 2px 2px 1px black;
+        padding: 30px;
+    }
+
+section>h2 {    
+    color:var(--corverdec);
+    margin:30px;
+    font-size: 1.9em;
+    font-family: var(--fonte-tema);     
+}
+.divisor {
+    background-color: var(--corverdec);
+    color: var(--corpreta);
+    font-weight: bolder;
+    border-bottom: solid 5px var(--corazulc);
+    padding: 0px;
+    margin: 0px;
+}
+.botao-Site {
+        box-shadow: 1px 1px 1px 1px var(--corazule);
+        border: none;
+        border-radius: 1px;
+        margin: 10px;
+        background: var(--corazulc);
+        color: var(--corverdec);
+        text-align: center;
+        width: 95px;
+}
+
+.botao-Site:hover {
+    color: var(--corpreta);
+    
+}
+.homedv1 {
+    display: block;
+    background-image: url('../imagens/familiahome/familiacelular1.jpg');
+    margin-top: 50px;
+    background-position:center, center;
+    width: auto;
+    height: auto;
+    
+    
+ }
+ .menu
+ {
+    display: none;
+ }
+ .menu-toggle {
+    display: block;
+ }
+#conteudo2
+{
+    margin-top: 0px;
+    background:var(--corfundo);
+    color:var(--corbranca);
+    font-size: 18px;
+
+}
+div>#conteudo2
+{
+    margin-top: 5%;
+    background: var(--corfundo);
+    
+}
+
+.page-header 
+{ 
+    font-size: 2.0em;
+    font-weight: 650px;
+}
+ .form-group {
+    text-align: center;
+ }
+ .form-horizontal 
+ {
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+ }
+ .form-control
+ {
+    text-align: center;
+
+    
+    height: 30px;
+ }
+
+.form-group 
+ {
+    
+    border: none;
+    padding: 10px;
+    margin: 0px;
+    
+    
+    text-align: center;
+    width: 195px;
+
+}
+.botao 
+{
+    box-shadow: 1px 1px 1px 1px var(--corazule);
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    background: var(--corazulc);
+    color: var(--corverdec);
+    text-align: center;
+    width: 95px; 
+}
+.botao:hover {
+    color: var(--corpreta)
+}
+.d-sm-flex
+{
+    color:var(--corbranca);
+    background: var(--corverdee);
+    font-size: 1.2em;
+}
+
+
+
+footer > a {
+   color:var(--corcinza);
+   text-decoration: underline;
+   text-decoration-color: var(--corazulc);
+}
+
+
+.imgEmater 
+{    
+    background-image: url("../imagens/sedeemater.jpg") ;
+    background-size: cover;
+    background-position: top center;
+    height: auto;
+}
+.imgUnimed 
+{    
+    background-image: url("../imagens/unimedbh.jpg") ;
+    background-size: cover;
+    background-position: top center;
+    height: auto;
+}
+
+footer {
+    border-top: solid 5px var(--corazulc);
+    background-color: var(--corfundo);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--corbranca);
+}
+footer>h5
+{
+    font-size: 1.1em;
+}
+.contato>p,.logradouro>p
+{
+    padding-left: 5px;
+    font-size: .7em;
+    text-align: left;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.logoUnimed,.logoEmater
+{
+    margin-top: 10px;
+    
+}

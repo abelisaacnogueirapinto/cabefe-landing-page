@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cabefe - Login 1 </title>
+		<meta http-equiv="Content-Type" content="text/html";charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="Estilos/js/JSCabefe.js" type="text/javascript"></script>	
+		<script type="text/javascript" src="Estilos/js/mascara.js"></script>
+		<link rel="stylesheet" href="../css/style.css">
+		<script src="Estilos/js/bootstrap.js"></script>
+		<script src="Estilos/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="Estilos/js/mascara.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>	
+	   :root 
+			{
+				/*cores*/
+				--corverde  :#2b564b;
+				--corfundo  :#222222ef;
+				--corverdec :#b7f0d6;
+				--corazulc  :#4faddb;
+				--corazule  :#286291;
+				--corpreta  :#000;
+				--corbranca :#fff;
+			}
+
+			*
+			{
+				margin: 0px;
+				padding: 0px;
+				background: corfundo;
+			}
+			main
+			 {
+				height: auto;
+				background:var(--corfundo);
+
+			}
+	   .MainPrincipal 
+	   {
+	   width: 100%;
+	   height: auto;
+	   padding-top: 140px ;
+	  
+	   background:var(--corfundo);
+	   }
+	   h1
+	   {
+		color:var(--corbranca);
+		padding-bottom: 50px;
+	   }
+	   a>img
+	   {
+		width: 120px;
+	   }
+
+	   a
+	   {
+		color:white;
+		text-decoration: none;
+		margin-top: 10px;
+	   }
+	   a:hover
+	   {
+		color:var(--corazulc)
+	   }
+	   .row 
+	   {
+		align-items: left;
+		padding-top: 20px;
+	   }
+	   .container-fluid
+	   {
+		height: auto;
+	   }
+	   div>h1
+		{
+			font-size: 1.8em;
+			text-align: center;
+		}
+		strong
+		{
+			font-size: 1.4em;
+
+		}
+		p
+		{
+			font-size: 0.8em;
+		}
+		td,th,.numero
+		{
+			color:var(--corbranca);
+		}
+		.numero:hover
+		{
+			display: block;
+			color:var(--corazulc);
+		
+		}
+		
+		
+		footer
+		{
+			padding-top: 30px;
+		}
+	</style>
+	</head>
+	<body onload= "Load()">
+		<header class="cabecalho">
+			<div class="logo">
+			  <a href="#inicio">
+				  <img  src="../Imagens/logocabefepequena.png" alt="Logo" />
+			  </a>
+			</div>
+		
+			<button class="menu-toggle" onclick="">
+			  <i class="fa fa-lg fa-bars"></i>
+			</button>
+		
+			<nav class="menu">
+				<div class="container-fluid">
+					<li class="nav-item dropdown">
+					  <a  class="nav-link dropdown-toggle"  href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Início
+					  </a>
+					</li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Quem Somos?
+						</a>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="instituicao.html">Instuição</a></li>
+						  <li><hr class="dropdown-divider"></li>
+						  <li><a class="dropdown-item" href="#">Palavra do Presidente</a></li>
+						  <li><a class="dropdown-item" href="#">Estatuto da Cabefe</a></li>
+						  <li><a class="dropdown-item" href="#">Regulamento</a></li>
+						  <li><a class="dropdown-item" href="#">Orgão de Direção</a></li>               
+						  <li><a class="dropdown-item" href="#">Gestão</a></li><br>
+						  <li><a class="dropdown-item" href="#">Equipe de Apoio</a></li>               
+						  <li><a class="dropdown-item" href="#">Representantes das Uregis</a></li>
+						 
+						</ul>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Convênios e Serviços
+						</a>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="#">Plano de Saúde</a></li>
+						  <li><a class="dropdown-item" href="#">Transporte Aéreo</a></li>
+						  <li><a class="dropdown-item" href="#">Odontologia</a></li>
+						  <li><a class="dropdown-item" href="#">Seguros</a></li>
+						  <li><a class="dropdown-item" href="#">Fundo Emergencial </a></li>
+						  <li><a class="dropdown-item" href="#">Auxilio Funeral</a></li>
+						  <li><hr class="dropdown-divider"></li>
+						  <li><a class="dropdown-item" href="#">Outros Beneficios</a>
+							
+											
+						</ul>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						 Galeria
+						</a>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="#">Presidentes</a></li>
+						  <li><hr class="dropdown-divider"></li>
+						  <li><a class="dropdown-item" href="#"> Fotos & Vídeos</a></li>
+						  <li><a class="dropdown-item" href="#">Eventos</a></li>
+						</ul>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Contato
+						</a>
+						
+					  </li>
+					  <li class="nav-item dropdown">
+						<a href="Default.html" class="botao destaque">Login Sócio</a>
+						</a>
+						
+					  </li>
+					  
+				  </div>
+			</nav>
+		</header> 
+		<div class="row">
+			<div class="col-sm-12 container" id="conteudo2">
+				<!--CONTEÚDO PRINCIPAL DA PÁGINA-->
+				<!--TÍTULO-->
+				
+				<BR><br>
+				
+	<div class="col-sm-8 container" id="conteudo2">
+				<div id="topo">
+					<h1 class="page-header">Downloads</h1>
+				</div>
+				<br/>
+					
+
+				<!--Tabela de Documentos-->
+				<table class="table table-hover">
+					<caption>VIAGENS ATENDIMENTO CABEFE</caption>
+					<thead>
+						<tr>
+							<th>Numero</th>
+							<th>Documento</th>
+					
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr>
+							<td>01</td>
+							<td><a href="../Documentos/formulario/adiantamentoviagem95018.ods">Viagem - Solicitacao de Adiantamento SIMPLES - 950 18 </a></td>
+							<td></td>
+						</tr>
+						
+						<tr>
+							<td>02</td>
+							<td><a href="../Documentos/formulario/relatorioviagem95019.ods">Viagem - Relatorio de Viagem SIMPLES - 950 19</a></td>
+							<td></td>
+						</tr>
+						
+					</tbody>
+				</table>
+				
+				
+			</div>
+		</div>
+
+
+
+		</div>
+		<footer>
+			<div class="row" id="rodape">
+				<div class="col-sm-5">
+					<img src="../Estilos/Imagens/rodape_logo_cabefe.png" alt="Cabefe" style="float:left; margin-right:20px;"/>
+					<br/>
+					<p style="margin-bottom:0;">Endere&ccedil;o: Av. Raja Gab&aacute;glia 1626 - Gutierrez</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Belo Horizonte - MG / CEP: 30.441-194</p>
+				</div>
+				<div class="col-sm-4" style="margin-right:-15px;">
+					<p style="margin-bottom:0">Telefones:(31)3349-8161 - Faturamento</p>
+					<p style="margin-bottom:0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(31)3349-8164 - Financeiro</p>
+					<p style="margin-bottom:0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(31)3349-8108 - Empr&eacute;stimo</p>
+					<p style="margin-bottom:0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(31)3349-8035 - Plano de Sa&uacute;de</p>
+				</div>
+				<div class="col-sm-3" id="rodapeImgs">
+					<div class="cont1Item" style="float:left">
+						<a href="http://www.emater.mg.gov.br/" target="_blank">
+							<img src="../Estilos/Imagens/emater_logo.jpg" alt="Emater"/>
+						</a>
+					</div>
+					<div class="cont1Item" style="float:left">
+						<a href="http://www.unimedbh.com.br" target="_blank">
+							<img src="../Estilos/Imagens/banner_unimedbh.gif" alt="Unimed-BH" />
+						</a>
+					</div>				
+					<div class="cont1Item"style="float:left">
+						<a href="http://www.unimedodonto.com.br" target="_blank">
+							<img src="../Estilos/Imagens/unimedOdonto_logo.jpg" alt="Unimed Odonto"/>
+						</a>
+					</div>
+					<div class="cont1Item"style="float:left">
+						<a href="http://www.uniodontobh.org.br" target="_blank">
+							<img src="../Estilos/Imagens/unidonto_BH_logo.png" alt="Unidonto BH" />
+						</a>
+					</div>					
+					<div class="cont1Item" style="float:left">
+						<a href="http://www.uniminas.com.br/" target="_blank">
+							<img src="../Estilos/Imagens/unimed_aero_medica.png" alt="Unimed Aero Médica"/>
+						</a>
+					</div>
+					<div class="cont1Item">
+						<a href="http://www.engesoft.com.br" target="_blank">
+							<img src="../Estilos/Imagens/NEWLogoEDS.png" alt="EDS Engesoft" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

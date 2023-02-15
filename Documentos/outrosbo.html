@@ -1,0 +1,59 @@
+<CENTER><P><H3>Sócio Facultativo - 2ª via de boleto</P></H3>
+
+          <P><H6>  <font color="red">BOLETOS DIVERSOS</font></H6></P>
+<br>
+<br>
+<P> O B S E R V A Ç Ã O:   DIGITE SOMENTE OS 11 NÚMEROS DO SEU CPF SEM PONTO E SEM O HÍFEN - clique no botão download</P></center>
+
+<link rel="stylesheet" type="text/css" href="bootstrap-darkly.min.css">
+<div class="container">
+   <div class="row justify-content-md-center">
+      <div class="col-md-3">
+         <div class="input-group mb-3">
+            <input id="cpf" type="text" class="form-control" placeholder="CPF" aria-describedby="basic-addon1">
+         </div>
+         <p>
+            <button id="download-button" class="btn btn-primary">Download</button>
+         </p>
+      </div>
+   </div>
+</div>
+<style type="text/css">
+   .container {
+   position: relative;
+   top: 10%;
+   }
+   p {
+   text-align: center;
+   }
+</style>
+<script type="text/javascript">
+   function download(filename) {
+   		var element = document.createElement('a');
+   		element.setAttribute('href', 'outrosboletos\\' + filename);
+   		element.setAttribute('download', filename);
+   
+   		element.style.display = 'none';
+   		document.body.appendChild(element);
+   
+   		element.click();
+   
+   		document.body.removeChild(element);
+   	}
+   
+   	// Start file download.
+   	document.getElementById("download-button").addEventListener("click", function () {
+   		// Generate download of hello.txt file with some content
+   		var filename = document.getElementById("cpf").value;
+   		filename += ".pdf";
+   
+   		download(filename);
+       }, false);
+       
+</script>
+
+<br>
+<br>
+<br>
+
+<p>Caso venha dar<font color="red"> Falha sem arquivo </font> <font color="white"> é porque seu cpf foi digitado errado ou não existe boleto</font></p>
